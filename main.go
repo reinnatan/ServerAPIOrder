@@ -47,9 +47,6 @@ func main() {
 			return c.Status(412).SendString(string(marshalOrder))
 		}
 
-		//currentTimeStamp := time.Now().UnixMilli()
-		//orderRequest.LastUpdatedTimeStamp = currentTimeStamp
-
 		return c.SendString(string(order))
 	})
 
